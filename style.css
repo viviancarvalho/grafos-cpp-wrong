@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+/* MAPA */
+#map {
+  width: 70%;
+  height: 100vh;
+}
+
+/* PAINEL */
+#panel {
+  width: 30%;
+  padding: 20px;
+  background: #1e1e1e;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.6);
+}
+
+/* TÍTULOS */
+h2 {
+  color: #4da3ff;
+}
+
+h3 {
+  color: #7fbfff;
+}
+
+/* INPUTS */
+select, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+/* BOTÃO */
+button {
+  background-color: #4da3ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1f7ae0;
+}
+
+/* RESULTADO */
+#resultado {
+  margin-top: 15px;
+  padding: 10px;
+  background: #1b2a1b;
+  border-radius: 6px;
+  color: #7CFC98;
+  font-weight: bold;
+}
+
+/* LISTA DE HOSPITAIS */
+.hospital-item {
+  margin: 6px 0;
+  padding: 8px;
+  background: #2a2a2a;
+  border-radius: 6px;
+  border-left: 4px solid #4da3ff;
+}
+
+/* SCROLL bonito (opcional) */
+#panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+#panel::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}

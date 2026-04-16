@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carteiro Chinês - Fortaleza</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<div id="panel">
+  <h2>Hospitais</h2>
+  <div id="listaHospitais"></div>
+
+  <h2>Ambulância</h2>
+
+  <label>Hospital atual:</label>
+  <select id="origem"></select>
+
+  <label>Especialidade:</label>
+  <select id="especialidade">
+    <option value="pediatria">Pediatria</option>
+    <option value="emergencia">Emergência</option>
+    <option value="cardiologia">Cardiologia</option>
+    <option value="clinica">Clínica Geral</option>
+    <option value="cirurgia">Cirurgia</option>
+  </select>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <h3>Resultado</h3>
+  <div id="resultado"></div>
+</div>
+
+<script type="module" src="map.js"></script>
+
+</body>
+</html>
